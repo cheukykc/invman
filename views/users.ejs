@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <!--link rel='stylesheet' href='/stylesheets/style.css' /-->
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<a href="/create">Create</a>
+<form action="/logout" method="GET">
+    <input type="submit" value="logout">
+</form>
+<table>
+    <% for(var i=0; i < developer.length; i++) { %>
+        <tr>
+            <td><%= developer[i].name %></td>
+            <td><%= developer[i].sid %></td>
+        </tr>
+    <% } %>
+</table>
+<table>
+    <% for(var i=0; i < res.length; i++) { %>
+        <tr>
+            <td><%= res[i].name %></td>
+        </tr>
+    <% } %>
+</table>
+</body>
+</html>

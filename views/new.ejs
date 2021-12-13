@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <!-- link rel='stylesheet' href='/stylesheets/style.css' / -->
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<form action="/users" method="POST">
+    <input type="submit" value="back">
+</form>
+<form action="/create" method="POST">
+    <div class="input-field">
+        <input type="text" name="inventory_ID" id="inventory_ID" placeholder="Enter inventory_ID">
+    </div>
+    <div class="input-field">
+        <input type="text" name="name" id="name" placeholder="Enter name">
+    </div>
+    <div class="input-field">
+        <input type="text" name="type" id="type" placeholder="Enter type">
+    </div>
+    <div class="input-field">
+        <input type="text" name="quantity" id="quantity" placeholder="Enter quantity">
+    </div>
+    <div class="input-field">
+        <input type="text" name="photo" id="photo" placeholder="Enter photo">
+    </div>
+    <div class="input-field">
+        <input type="text" name="photo_mimetype" id="photo_mimetype" placeholder="Enter photo_mimetype">
+    </div>
+    <div class="input-field">
+        <input type="text" name="inventory_address" id="inventory_address" placeholder="Enter inventory_address">
+    </div>
+    <div class="input-field">
+        <input type="text" name="street" id="street" placeholder="Enter street">
+    </div>
+    <div class="input-field">
+        <input type="text" name="building" id="building" placeholder="Enter building">
+    </div>
+    <div class="input-field">
+        <input type="text" name="country" id="country" placeholder="Enter country">
+    </div>
+    <div class="input-field">
+        <input type="text" name="zipcode" id="zipcode" placeholder="Enter zipcode">
+    </div>
+    <div class="input-field">
+        <input type="text" name="coord" id="coord" placeholder="Enter coord">
+    </div>
+    <div class="input-field">
+        <input type="text" name="manager" id="manager" placeholder="Enter manager">
+    </div>
+
+    <input type="submit" value="Create">
+</form>
+</body>
+</html>
